@@ -18,7 +18,7 @@ export const Productos = () => {
           equipos para trabajo en altura
           hasta 12 metros.
         </h3>
-        <div className='w-[360px] h-[213px]  bg-black mt-5 rounded-xl'>
+        <div className='w-full h-[213px]  bg-black mt-5 rounded-xl'>
           <img
             src={Productos1}
             className='w-full h-full rounded-xl object-cover'
@@ -33,7 +33,7 @@ export const Productos = () => {
           para trabajos hasta 100
           metros.
         </h3>
-        <div className='w-[360px] h-[213px]  bg-black mt-5 rounded-xl'>
+        <div className='w-full h-[213px]  bg-black mt-5 rounded-xl'>
           {" "}
         </div>
         <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
@@ -46,7 +46,7 @@ export const Productos = () => {
           accesorios. Disponibles en
           medidas estándar y de pasillo.
         </h3>
-        <div className='w-[360px] h-[213px]  bg-black mt-5 rounded-xl'>
+        <div className='w-full h-[213px]  bg-black mt-5 rounded-xl'>
           {" "}
         </div>
         <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
@@ -58,7 +58,7 @@ export const Productos = () => {
           hormigoneras, caballetes,
           palas y más.
         </h3>
-        <div className='w-[360px] h-[213px]  bg-black mt-5 rounded-xl'>
+        <div className='w-full h-[213px]  bg-black mt-5 rounded-xl'>
           {" "}
         </div>
       </div>
