@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unknown-property */
+import { Contacto } from "./components/Contacto";
 import NavBar from "./components/NavBar";
 import { Nosotros } from "./components/Nosotros";
 import { Productos } from "./components/Productos";
@@ -13,6 +14,7 @@ function App() {
       <div className='w-[375px] flex-col justify-center content-center align-center pb-20'>
         <Nosotros />
         <Productos />
+        <Contacto />
       </div>
     </div>
   );
