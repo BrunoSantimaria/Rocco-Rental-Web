@@ -7,13 +7,13 @@ import {
 export const Nosotros = () => {
   return (
     <div className='flex-col'>
-      <div className='flex m-2 mt-12 ml-5'>
+      <div className='flex  mt-12 '>
         <h2 className='font-poppins text-color3 tracking-titles text-2xl mr-10'>
           Nosotros
         </h2>
         <div className='border-color2 border-xsm place-self-center w-5/6 h-0'></div>
       </div>
-      <section className='ml-5 whitespace-pre-line h-fit'>
+      <section className='whitespace-pre-line h-fit'>
         <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-4 mb-4'>
           <span className='text-color2'>
             EQUIPAMIENTO
@@ -63,7 +63,7 @@ export const Nosotros = () => {
           <strong>escaleras</strong> y{" "}
           <strong>puntales</strong>.
         </h3>
-        <div className='mr-5 mt-5 h-[150px] w-[355px]'>
+        <div className=' mt-5 h-[150px] w-[355px]'>
           <img
             src={Nosotros2}
             className='rounded-xl bg-no-repeat object-cover h-[150px] w-[360px] backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50'

@@ -3,8 +3,8 @@ import Formulario from "./Formulario";
 export const Contacto = () => {
   return (
     <section>
-      <div className='flex m-2 mt-12 ml-5'>
-        <h2 className='font-poppins text-color3 tracking-titles text-2xl mr-6'>
+      <div className='flex  mt-12 '>
+        <h2 className='font-poppins text-color3 tracking-titles text-2xl'>
           <span className='text-color2'>
             DUDAS
           </span>
@@ -12,7 +12,7 @@ export const Contacto = () => {
         </h2>
         <div className='border-color2 border-xsm place-self-center w-5/6 '></div>
       </div>
-      <p className='text-color3 ml-5 font-josefin tracking-titles font-light mt-5'>
+      <p className='text-color3  font-josefin tracking-titles font-light mt-5'>
         <strong>Podés</strong>{" "}
         comunicarte con nosotros via
         WhatsApp, o llamando al{" "}

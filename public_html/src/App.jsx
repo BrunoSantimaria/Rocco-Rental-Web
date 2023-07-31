@@ -11,7 +11,7 @@ function App() {
         <NavBar />
       </div>
       <Title />
-      <div className='w-[375px] flex-col justify-center content-center align-center pb-20'>
+      <div className='w-[375px] flex-col justify-center content-center align-center p-5 pb-20'>
         <Nosotros />
         <Productos />
         <Contacto />

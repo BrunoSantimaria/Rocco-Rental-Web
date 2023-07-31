@@ -2,7 +2,7 @@ import Imagen from "../img/img_3062.jpg";
 export const Title = () => {
   return (
     <div className='flex'>
-      <div className='bg-blend-hard-light opacity-50'>
+      <div className='bg-blend-soft-light opacity-50'>
         <img
           src={Imagen}
           className='blur-xsm backdrop-opacity-5 mix-blend-hard-light bg-cover saturate-150'

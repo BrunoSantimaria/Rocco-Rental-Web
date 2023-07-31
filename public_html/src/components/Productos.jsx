@@ -2,7 +2,7 @@ import { Productos1 } from "../img/NosotrosImagenes";
 
 export const Productos = () => {
   return (
-    <section className='ml-5 mt-10'>
+    <section className='mt-10'>
       <div className='flex'>
         <h2 className='font-poppins h-fit text-color3 whitespace-pre-line tracking-titles text-2xl mr-10'>
           Productos y servicios
