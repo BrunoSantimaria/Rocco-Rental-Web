@@ -4,7 +4,7 @@ import Logo from "../assets/LOGO-ROCCO.png";
 
 const NavBar = () => {
   return (
-    <div className='bg-color1 flex  justify-between h-20 w-screen border-color2 border-b-xsm'>
+    <div className='bg-color1 flex fixed justify-between h-20 w-full border-color2 border-b-xsm z-10'>
       <div className='self-center ml-5'>
         <img
           src={Logo}

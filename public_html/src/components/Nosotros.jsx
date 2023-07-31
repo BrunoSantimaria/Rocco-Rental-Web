@@ -6,12 +6,12 @@ import {
 
 export const Nosotros = () => {
   return (
-    <div>
+    <div className='flex-col'>
       <div className='flex m-2 mt-12 ml-5'>
         <h2 className='font-poppins text-color3 tracking-titles text-2xl mr-10'>
           Nosotros
         </h2>
-        <div className='border-color2 border-xsm place-self-center w-full mr-2 h-0'></div>
+        <div className='border-color2 border-xsm place-self-center w-5/6 h-0'></div>
       </div>
       <section className='ml-5 whitespace-pre-line h-fit'>
         <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-4 mb-4'>
@@ -36,10 +36,10 @@ export const Nosotros = () => {
           </strong>
           .
         </h3>
-        <div className='mr-5 mt-5 '>
+        <div className='mr-5 mt-5 w-[355px]'>
           <img
             src={Nosotros1}
-            className='rounded-xl bg-no-repeat object-cover h-[150px] w-[360px] backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50'
+            className='rounded-xl bg-no-repeat justify-center items-center place-items-center content-center object-cover h-[150px] w-[380px] backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50'
           ></img>
         </div>
         <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-4 mb-4'>
@@ -63,7 +63,7 @@ export const Nosotros = () => {
           <strong>escaleras</strong> y{" "}
           <strong>puntales</strong>.
         </h3>
-        <div className='mr-5 mt-5 h-[150px]'>
+        <div className='mr-5 mt-5 h-[150px] w-[355px]'>
           <img
             src={Nosotros2}
             className='rounded-xl bg-no-repeat object-cover h-[150px] w-[360px] backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50'
@@ -84,7 +84,7 @@ export const Nosotros = () => {
           <strong>calidad</strong> y al
           mejor <strong>precio</strong>.
         </h3>
-        <div className='flex   align-center content-center justify-center items-center self-center mt-5 mr-5'>
+        <div className='flex  w-[355px]  mt-5 mr-5'>
           <img
             src={Nosotros3}
             className='rounded-xl bg-no-repeat object-cover h-[150px] w-[360px] backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50 '
