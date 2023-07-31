@@ -1,4 +1,8 @@
-import { Nosotros1 } from "../img/NosotrosImagenes";
+import {
+  Nosotros1,
+  Nosotros2,
+  Nosotros3,
+} from "../img/NosotrosImagenes";
 
 export const Nosotros = () => {
   return (
@@ -35,7 +39,7 @@ export const Nosotros = () => {
         <div className='mr-5 mt-5 '>
           <img
             src={Nosotros1}
-            className='rounded-xl bg-no-repeat'
+            className='rounded-xl bg-no-repeat object-cover h-[150px] w-[360px] backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50'
           ></img>
         </div>
         <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-4 mb-4'>
@@ -55,10 +59,37 @@ export const Nosotros = () => {
             balancín colgante eléctrico
           </strong>
           , <strong>andamios</strong> y{" "}
-          <strong>accesorios</strong>,
+          <strong>accesorios</strong>,{" "}
           <strong>escaleras</strong> y{" "}
           <strong>puntales</strong>.
         </h3>
+        <div className='mr-5 mt-5 h-[150px]'>
+          <img
+            src={Nosotros2}
+            className='rounded-xl bg-no-repeat object-cover h-[150px] w-[360px] backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50'
+          ></img>
+        </div>
+        <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-4 mb-4'>
+          <span className='text-color2'>
+            NUESTRAS
+          </span>{" "}
+          {"\n"} HERRAMIENTAS
+        </h2>
+        <h3 className=' font-josefin font-light text-lg  text-color3 tracking-wider w-[360px]'>
+          Contamos con{" "}
+          <strong>hormigoneras</strong>,{" "}
+          <strong>carretillas</strong> y{" "}
+          <strong>caballetes</strong> en
+          venta, de la mejor{" "}
+          <strong>calidad</strong> y al
+          mejor <strong>precio</strong>.
+        </h3>
+        <div className='flex   align-center content-center justify-center items-center self-center mt-5 mr-5'>
+          <img
+            src={Nosotros3}
+            className='rounded-xl bg-no-repeat object-cover h-[150px] w-[360px] backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50 '
+          ></img>
+        </div>
       </section>
     </div>
   );
