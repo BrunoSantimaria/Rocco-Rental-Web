@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "josefin";
+  src: url("../src/fonts/JosefinSans.ttf");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../src/fonts/Poppins.ttf");
+}

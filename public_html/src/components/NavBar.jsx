@@ -1,14 +1,23 @@
 import React from "react";
-
+import { Icon } from "@iconify/react";
 import Logo from "../assets/LOGO-ROCCO.png";
+
 const NavBar = () => {
   return (
-    <div className='bg-color1 flex h-20 w-screen border-color2 border-b-2'>
-      <div className='self-center ml-5 place-content-center'>
+    <div className='bg-color1 flex  justify-between h-20 w-screen border-color2 border-b-xsm'>
+      <div className='self-center ml-5'>
         <img
           src={Logo}
           className='w-11 h-11'
         ></img>
+      </div>
+      <div className='self-center mr-5'>
+        <Icon
+          icon='material-symbols:menu'
+          color='#d9d9d9'
+          width='52'
+          height='49'
+        />
       </div>
     </div>
   );
