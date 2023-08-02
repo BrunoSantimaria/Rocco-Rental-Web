@@ -8,7 +8,7 @@ export const Nosotros = () => {
   return (
     <div className='flex-col justify-center'>
       <div className='flex  mt-8 '>
-        <h2 className='font-poppins text-color3 tracking-titles text-2xl mr-10'>
+        <h2 className='font-poppins text-color3 tracking-titles py-6 text-3xl mr-10'>
           Nosotros
         </h2>
         <div className='border-color2 border-xsm place-self-center w-5/6 h-0'></div>

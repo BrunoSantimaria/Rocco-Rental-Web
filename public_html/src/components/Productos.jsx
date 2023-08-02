@@ -4,10 +4,10 @@ export const Productos = () => {
   return (
     <section className='mt-10'>
       <div className='flex'>
-        <h2 className='font-poppins h-fit text-color3 whitespace-pre-line tracking-titles text-2xl mr-10'>
+        <h2 className='font-poppins h-fit py-6 text-color3  tracking-titles text-3xl mr-10'>
           Productos y servicios
         </h2>
-        <div className='border-color2 border-xsm mt-4 w-4/6 h-0'></div>
+        <div className='border-color2 border-xsm mt-16 w-4/6 mx-auto h-0'></div>
       </div>
       <div>
         <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>

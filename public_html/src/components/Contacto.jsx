@@ -4,7 +4,7 @@ export const Contacto = () => {
   return (
     <section>
       <div className='flex  mt-12 '>
-        <h2 className='font-poppins text-color3 tracking-titles text-2xl'>
+        <h2 className='font-poppins text-color3 tracking-titles  pb-6 text-3xl'>
           <span className='text-color2'>
             DUDAS
           </span>
