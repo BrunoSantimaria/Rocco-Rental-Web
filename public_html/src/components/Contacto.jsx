@@ -1,9 +1,14 @@
 import { Icon } from "@iconify/react";
 import Formulario from "./Formulario";
+import React, { useRef } from "react";
 export const Contacto = () => {
+  const contactoRef = useRef(null);
   return (
     <section>
-      <div className='flex  mt-12 '>
+      <div
+        className='flex  mt-12 '
+        ref={contactoRef}
+      >
         <h2 className='font-poppins text-color3 tracking-titles  pb-6 text-3xl'>
           <span className='text-color2'>
             DUDAS
