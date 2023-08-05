@@ -15,9 +15,25 @@ function App() {
       </div>
       <Title />
       <div className='w-[375px] mx-auto mt-5 flex flex-col space-y-8 pb-10'>
-        <Nosotros />
-        <Productos />
-        <Contacto />
+        <div
+          id='nosotros'
+          className='w-[375px] mx-auto mt-0 flex flex-col space-y-0 pb-10'
+        >
+          <Nosotros />
+        </div>
+        <div
+          id='productos'
+          className='w-[375px] mx-auto mt-5 flex flex-col space-y-8 pb-10'
+        >
+          <Productos />
+        </div>
+
+        <div
+          id='contacto'
+          className='w-[375px] mx-auto mt-5 flex flex-col space-y-8 pb-10'
+        >
+          <Contacto />
+        </div>
         <Informacion />
       </div>
       <Footer />

@@ -39,6 +39,7 @@ export const Nosotros = () => {
         <div className='mr-5 mt-5 w-full'>
           <img
             src={Nosotros1}
+            alt='alquiler plataformas rosario'
             className='rounded-xl bg-no-repeat justify-center items-center place-items-center content-center object-cover h-[150px] w-[380px] backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50'
           ></img>
         </div>
@@ -66,6 +67,7 @@ export const Nosotros = () => {
         <div className=' mt-5 h-[150px] w-full'>
           <img
             src={Nosotros2}
+            alt='alquiler andamios rosario'
             className='rounded-xl bg-no-repeat object-cover h-[150px] w-full backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50'
           ></img>
         </div>
@@ -87,6 +89,7 @@ export const Nosotros = () => {
         <div className='flex  w-full  mt-5 mr-5'>
           <img
             src={Nosotros3}
+            alt='hormigoneras venta rosario'
             className='rounded-xl bg-no-repeat object-cover h-[150px] w-full backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50 '
           ></img>
         </div>

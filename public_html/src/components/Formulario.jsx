@@ -10,10 +10,10 @@ export default function Formulario() {
   const onSubmit = (data) => {
     console.log(data);
 
-    const mailtoLink = `mailto:santimariabruno@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:info@roccorental.com.ar?subject=${encodeURIComponent(
       data.Asunto
     )}&body=${encodeURIComponent(
-      `Mi nombre: ${data.Nombre}\n y mi Email: ${data.Email}\nQueria consultar: ${data.Consulta}`
+      `Hola, mi nombre es ${data.Nombre} y queria realizar la siguiente consulta: {\n}${data.Consulta}{\n}Mi correo de contacto es ${data.Email}. Saludos.`
     )}`;
 
     window.location.href = mailtoLink;
@@ -63,7 +63,7 @@ export default function Formulario() {
             minLength: 20,
             maxLength: 200,
           })}
-          className='m-2 rounded-sm w-10/12 p-1 bg-color3 w-[190px] text-color1'
+          className='m-2 rounded-sm w-10/12 p-1 bg-color3  text-color1'
         />
         <div className='border-color2 inline-flex border-[1px] border-opacity-100 rounded-lg w-3/6 h-10 justify-center items-center'>
           <button

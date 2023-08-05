@@ -1,6 +1,72 @@
-import { Productos1 } from "../img/NosotrosImagenes";
-
+import { useState } from "react";
+import { plataformaTijera } from "../img/NosotrosImagenes";
+import { Icon } from "@iconify/react";
 export const Productos = () => {
+  const [
+    currentIndex,
+    setCurrentIndex,
+  ] = useState([
+    {
+      tijeraIndex: 1,
+    },
+  ]);
+
+  const prevSlide = (
+    sectionIndex,
+    imageArray,
+    propertyName
+  ) => {
+    const section =
+      currentIndex[sectionIndex];
+    const isFirstSlide =
+      section[propertyName] === 0;
+    const newIndex = isFirstSlide
+      ? imageArray.length - 1
+      : section[propertyName] - 1;
+
+    setCurrentIndex([
+      ...currentIndex.slice(
+        0,
+        sectionIndex
+      ),
+      {
+        ...section,
+        [propertyName]: newIndex,
+      },
+      ...currentIndex.slice(
+        sectionIndex + 1
+      ),
+    ]);
+  };
+
+  const nextSlide = (
+    sectionIndex,
+    imageArray,
+    propertyName
+  ) => {
+    const section =
+      currentIndex[sectionIndex];
+    const isLastSlide =
+      section[propertyName] ===
+      imageArray.length - 1;
+    const newIndex = isLastSlide
+      ? 0
+      : section[propertyName] + 1;
+
+    setCurrentIndex([
+      ...currentIndex.slice(
+        0,
+        sectionIndex
+      ),
+      {
+        ...section,
+        [propertyName]: newIndex,
+      },
+      ...currentIndex.slice(
+        sectionIndex + 1
+      ),
+    ]);
+  };
   return (
     <section className='mt-10'>
       <div className='flex'>
@@ -18,12 +84,51 @@ export const Productos = () => {
           equipos para trabajo en altura
           hasta 12 metros.
         </h3>
-        <div className='w-full h-[213px]  bg-black mt-5 rounded-xl'>
-          <img
-            src={Productos1}
-            className='w-full h-full rounded-xl object-cover'
-          />
+        <div className='w-full h-[213px] bg-black mt-5 rounded-xl relative group'>
+          <div
+            style={{
+              backgroundImage: `url(${
+                plataformaTijera[
+                  currentIndex[0]
+                    .tijeraIndex
+                ]
+              })`,
+              backgroundSize: "cover", // Utiliza "cover" para ajustar sin recortar
+              backgroundRepeat:
+                "no-repeat",
+              width: "100%", // Asegúrate de que el div interno tome el ancho completo
+              height: "100%", // Asegúrate de que el div interno tome la altura completa
+            }}
+            className='rounded-xl  duration-300'
+          ></div>
+          <div className='hidden group-hover:block absolute top-[50%] p-2 -translate-x-8 translate-y-[-50%] left-5 text-2xl cursor-pointer'>
+            <Icon
+              icon='ei:arrow-left'
+              className='text-color3 w-[40px] h-20'
+              onClick={() =>
+                prevSlide(
+                  0,
+                  plataformaTijera,
+                  "tijeraIndex"
+                )
+              }
+            />
+          </div>
+          <div className='hidden group-hover:block absolute top-[50%] p-2 -translate-x-[-32px] translate-y-[-50%] right-5 text-2xl cursor-pointer'>
+            <Icon
+              icon='ei:arrow-right'
+              className='text-color3 w-[40px] h-20'
+              onClick={() =>
+                nextSlide(
+                  0,
+                  plataformaTijera,
+                  "tijeraIndex"
+                )
+              }
+            />
+          </div>
         </div>
+
         <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
           PLATAFORMA COLGANTE
         </h2>

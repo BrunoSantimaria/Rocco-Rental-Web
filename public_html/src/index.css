@@ -11,3 +11,12 @@
   font-family: "poppins";
   src: url("../src/fonts/Poppins.ttf");
 }
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
