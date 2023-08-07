@@ -1,4 +1,4 @@
-import Imagen from "../img/img_3052.jpg";
+import Imagen from "../img/img_3053.jpg";
 export const Title = () => {
   return (
     <div className='flex bg-black h-[840px] w-full object-contain'>

@@ -84,7 +84,7 @@ export const Productos = () => {
           equipos para trabajo en altura
           hasta 12 metros.
         </h3>
-        <div className='w-full h-[213px] bg-black mt-5 rounded-xl relative group'>
+        <div className='w-full h-[320px] bg-black mt-5 rounded-xl relative group'>
           <div
             style={{
               backgroundImage: `url(${
@@ -99,7 +99,7 @@ export const Productos = () => {
               width: "100%", // Asegúrate de que el div interno tome el ancho completo
               height: "100%", // Asegúrate de que el div interno tome la altura completa
             }}
-            className='rounded-xl  duration-300'
+            className='rounded-xl duration-300'
           ></div>
           <div className='hidden group-hover:block absolute top-[50%] p-2 -translate-x-8 translate-y-[-50%] left-5 text-2xl cursor-pointer'>
             <Icon

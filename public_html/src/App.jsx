@@ -13,7 +13,9 @@ function App() {
       <div className='pb-20'>
         <NavBar />
       </div>
-      <Title />
+      <div id='title'>
+        <Title />
+      </div>
       <div className='w-[375px] mx-auto mt-5 flex flex-col space-y-8 pb-10'>
         <div
           id='nosotros'

@@ -13,11 +13,20 @@ const NavBar = () => {
   return (
     <div className='bg-color1 flex fixed justify-between h-20 w-full border-color2 border-b-xsm z-10'>
       <div className='self-center ml-5'>
-        <img
-          src={Logo}
-          className='w-11 h-11'
-          alt='rocco rental logo'
-        ></img>
+        <Link
+          to='title'
+          smooth={true}
+          onClick={
+            modal ? handleMenu : ""
+          }
+          duration={700}
+        >
+          <img
+            src={Logo}
+            className='w-11 h-11 animate-fade-down animate-ease-in-out '
+            alt='rocco rental logo'
+          ></img>
+        </Link>
       </div>
       <div className='flex'>
         <div className='self-center mr-5 '>
@@ -29,13 +38,13 @@ const NavBar = () => {
             }
             color={
               modal
-                ? "#d9d9d9"
+                ? "#FCA311"
                 : "#d9d9d9"
             }
             width='52'
             height='49'
             onClick={handleMenu}
-            className='cursor-pointer '
+            className='cursor-pointer text-color2  '
           />
           {modal && (
             <div
@@ -49,34 +58,33 @@ const NavBar = () => {
                     smooth={true}
                     duration={700}
                     offset={-35}
+                    onClick={handleMenu}
                   >
                     Nosotros
                   </Link>
                 </p>
                 <div className='w-4/5 h-0 border-gray-400 border-xsm'></div>
-                <p className='py-2'>
+                <p className='py-2 cursor-pointer'>
                   <Link
                     to='productos'
                     smooth={true}
                     duration={700}
                     offset={-25}
+                    onClick={handleMenu}
                   >
                     Productos y
                     Servicios
                   </Link>
                 </p>
                 <div className='w-3/5 h-0 bg-color3 border-gray-400  border-xsm'></div>
-                <p className='py-2'>
-                  Galeria de imagenes
-                </p>
-                <div className='w-2/5 h-0 bg-color1 border-gray-400  border-xsm'></div>
 
-                <p className='py-2 font-bold mb-5'>
+                <p className='py-2 font-bold mb-5 cursor-pointer'>
                   <Link
                     to='contacto'
                     smooth={true}
                     duration={700}
                     offset={-40}
+                    onClick={handleMenu}
                   >
                     Contacto
                   </Link>
