@@ -1,13 +1,22 @@
 import { useState } from "react";
-import { plataformaTijera } from "../img/NosotrosImagenes";
+import {
+  plataformaTijera,
+  andamios,
+} from "../img/NosotrosImagenes";
+import { Carousel } from "./Carousel";
+import { AcordionBalancin } from "./AcordionBalancin";
 import { Icon } from "@iconify/react";
+import Acordion from "./Acordion";
+import DarkAccordion from "./Acordion";
 export const Productos = () => {
   const [
     currentIndex,
     setCurrentIndex,
   ] = useState([
     {
-      tijeraIndex: 1,
+      tijeraIndex: 0,
+      andamioIndex: 0,
+      herramientaIndex: 0,
     },
   ]);
 
@@ -67,6 +76,25 @@ export const Productos = () => {
       ),
     ]);
   };
+  const [
+    isTransitioning,
+    setIsTransitioning,
+  ] = useState(false);
+
+  const handleImageClick = () => {
+    setIsTransitioning(true);
+
+    // Simular una pausa antes de desplazar la imagen
+    setTimeout(() => {
+      setIsTransitioning(false);
+
+      // Actualizar currentIndex para mostrar la siguiente imagen
+      // y aplicar la transición nuevamente si es necesario
+    }, 300); // Tiempo de la transición
+
+    // Actualizar currentIndex para mostrar la siguiente imagen
+    // y aplicar la transición nuevamente si es necesario
+  };
   return (
     <section className='mt-10'>
       <div className='flex'>
@@ -84,22 +112,55 @@ export const Productos = () => {
           equipos para trabajo en altura
           hasta 12 metros.
         </h3>
-        <div className='w-full h-[320px] bg-black mt-5 rounded-xl relative group'>
+        <div className='w-full h-[220px]  bg-black mt-5 rounded-xl inline-block'>
+          <Carousel
+            slides={plataformaTijera}
+            autoSlide={false}
+          ></Carousel>
+        </div>
+        <DarkAccordion />
+        <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
+          PLATAFORMA COLGANTE
+        </h2>
+        <h3 className=' font-josefin font-light text-lg  text-color3 tracking-wider w-[360px]'>
+          <strong>Alquiler</strong> de
+          andamio colgante eléctrico,
+          para trabajos hasta 100
+          metros.
+        </h3>
+        <div className='w-full h-[213px]  bg-black mt-5 rounded-xl inline-block'>
+          <Carousel
+            slides={plataformaTijera}
+            autoSlide={false}
+          ></Carousel>
+        </div>
+        <AcordionBalancin />
+        <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
+          ANDAMIOS
+        </h2>
+        <h3 className=' font-josefin font-light text-lg  text-color3 tracking-wider w-[360px]'>
+          <strong>Alquiler</strong> y{" "}
+          <strong>venta</strong> de
+          andamios tubulares y
+          accesorios. Disponibles en
+          medidas estándar y de pasillo.
+        </h3>
+        <div className='w-full h-[240px] bg-black mt-5 rounded-xl relative group'>
           <div
             style={{
               backgroundImage: `url(${
-                plataformaTijera[
+                andamios[
                   currentIndex[0]
-                    .tijeraIndex
+                    .andamioIndex
                 ]
               })`,
-              backgroundSize: "cover", // Utiliza "cover" para ajustar sin recortar
+              backgroundSize: "cover",
               backgroundRepeat:
                 "no-repeat",
-              width: "100%", // Asegúrate de que el div interno tome el ancho completo
-              height: "100%", // Asegúrate de que el div interno tome la altura completa
+              width: "100%",
+              height: "100%",
             }}
-            className='rounded-xl duration-300'
+            className='rounded-xl'
           ></div>
           <div className='hidden group-hover:block absolute top-[50%] p-2 -translate-x-8 translate-y-[-50%] left-5 text-2xl cursor-pointer'>
             <Icon
@@ -108,8 +169,8 @@ export const Productos = () => {
               onClick={() =>
                 prevSlide(
                   0,
-                  plataformaTijera,
-                  "tijeraIndex"
+                  andamios,
+                  "andamioIndex"
                 )
               }
             />
@@ -121,38 +182,12 @@ export const Productos = () => {
               onClick={() =>
                 nextSlide(
                   0,
-                  plataformaTijera,
-                  "tijeraIndex"
+                  andamios,
+                  "andamioIndex"
                 )
               }
             />
           </div>
-        </div>
-
-        <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
-          PLATAFORMA COLGANTE
-        </h2>
-        <h3 className=' font-josefin font-light text-lg  text-color3 tracking-wider w-[360px]'>
-          <strong>Alquiler</strong> de
-          andamio colgante eléctrico,
-          para trabajos hasta 100
-          metros.
-        </h3>
-        <div className='w-full h-[213px]  bg-black mt-5 rounded-xl'>
-          {" "}
-        </div>
-        <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
-          ANDAMIOS
-        </h2>
-        <h3 className=' font-josefin font-light text-lg  text-color3 tracking-wider w-[360px]'>
-          <strong>Alquiler</strong> y{" "}
-          <strong>venta</strong> de
-          andamios tubulares y
-          accesorios. Disponibles en
-          medidas estándar y de pasillo.
-        </h3>
-        <div className='w-full h-[213px]  bg-black mt-5 rounded-xl'>
-          {" "}
         </div>
         <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
           HERRAMIENTAS

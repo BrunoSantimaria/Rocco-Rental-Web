@@ -74,6 +74,7 @@ export default function Formulario() {
           </button>
         </div>
       </form>
+      <div className='w-screen h-3/4'></div>
     </div>
   );
 }

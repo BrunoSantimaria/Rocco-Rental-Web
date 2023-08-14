@@ -1,4 +1,7 @@
 import { Icon } from "@iconify/react";
+import { Carousel } from "./Carousel";
+import { plataformaTijera } from "../img/NosotrosImagenes";
+
 export const Footer = () => {
   return (
     <div className='bg-color1 flex justify-between h-20 w-full border-color2 border-t-xsm z-10'>

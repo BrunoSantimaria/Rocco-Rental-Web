@@ -50,9 +50,8 @@ export const Nosotros = () => {
           {"\n"} CON NOSOTROS
         </h2>
         <h3 className=' font-josefin font-light text-lg  text-color3 tracking-wider w-[360px]'>
-          Contamos con{" "}
           <strong>
-            plataformas tijera
+            Plataformas tijera
           </strong>{" "}
           hasta 12 metros de altura de
           trabajo,{" "}
@@ -61,8 +60,10 @@ export const Nosotros = () => {
           </strong>
           , <strong>andamios</strong> y{" "}
           <strong>accesorios</strong>,{" "}
-          <strong>escaleras</strong> y{" "}
-          <strong>puntales</strong>.
+          <strong>
+            puntales telescópicos
+          </strong>
+          .
         </h3>
         <div className=' mt-5 h-[150px] w-full'>
           <img
