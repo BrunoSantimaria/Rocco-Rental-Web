@@ -30,7 +30,8 @@ const DarkAccordion = () => {
             expandIcon={<ExpandMore />} // Use the ExpandMore icon component
           >
             <span className='font-bold'>
-              FICHAS TÉCNICAS
+              FICHAS TÉCNICAS /
+              PLATAFORMAS TIJERA
             </span>
           </AccordionSummary>
 
@@ -39,6 +40,7 @@ const DarkAccordion = () => {
               href='https://drive.google.com/file/d/1xjPJu2fDhwWBxl8t7M3eZAgPM5GAA7dp/view'
               rel='noreferrer'
               target='_blank'
+              title='Rocco Rental Genie GS ficha tecnica'
             >
               <div className='flex cursor-pointer'>
                 <Icon
@@ -58,6 +60,7 @@ const DarkAccordion = () => {
               href='https://drive.google.com/file/d/1PjVJuYcUeH2AimE3RZvbb7BOxyyKYUYC/view?usp=sharing'
               rel='noreferrer'
               target='_blank'
+              title='Rocco Rental Genie GS ficha tecnica'
             >
               <div className='flex cursor-pointer'>
                 <Icon
@@ -77,6 +80,7 @@ const DarkAccordion = () => {
               href='https://drive.google.com/file/d/1mQ1QnObBLv6sTyYK2-m6OJxwgZMVNRJM/view?usp=sharing'
               rel='noreferrer'
               target='_blank'
+              title='Rocco Rental Genie GS ficha tecnica'
             >
               <div className='flex cursor-pointer'>
                 <Icon

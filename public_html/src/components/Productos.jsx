@@ -2,6 +2,7 @@ import { useState } from "react";
 import {
   plataformaTijera,
   andamios,
+  plataformaTijeraMock,
 } from "../img/NosotrosImagenes";
 import { Carousel } from "./Carousel";
 import { AcordionBalancin } from "./AcordionBalancin";
@@ -114,7 +115,9 @@ export const Productos = () => {
         </h3>
         <div className='w-full h-[220px]  bg-black mt-5 rounded-xl inline-block'>
           <Carousel
-            slides={plataformaTijera}
+            slides={
+              plataformaTijeraMock
+            }
             autoSlide={false}
           ></Carousel>
         </div>

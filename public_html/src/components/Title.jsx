@@ -7,6 +7,7 @@ export const Title = () => {
           src={Imagen}
           className='w-screen h-full object-cover blur-xsm backdrop-opacity-5 mix-blend-hard-light saturate-150'
           alt='alquiler de plataformas rocco rental'
+          title='alquiler de plataformas rocco rental'
         />
       </div>
       <div className='absolute mx-0 align-middle my-20 ml-5'>

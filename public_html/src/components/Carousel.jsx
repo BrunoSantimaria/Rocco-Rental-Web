@@ -51,17 +51,19 @@ export const Carousel = ({
             (slide, index) => {
               return (
                 <img
-                  src={slide}
-                  key={index}
+                  src={slide.img}
+                  key={
+                    index + slide.name
+                  }
+                  alt={slide.alt}
+                  title={slide.name}
                   style={{
                     backgroundSize:
                       "cover",
                     backgroundRepeat:
                       "no-repeat",
-                    width: "100%",
-                    height: "100%",
                   }}
-                  className='rounded-lg'
+                  className='rounded-lg h-full w-screen'
                 ></img>
               );
             }

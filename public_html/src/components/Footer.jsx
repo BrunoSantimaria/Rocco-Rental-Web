@@ -10,6 +10,7 @@ export const Footer = () => {
           href='https://www.facebook.com/roccorentalsrl/?locale=es_LA'
           target='_blank'
           rel='noopener noreferrer'
+          title='Rocco Rental Facebook'
         >
           <Icon
             icon='devicon-plain:facebook'
@@ -21,6 +22,7 @@ export const Footer = () => {
           href='https://www.instagram.com/roccorentalsrl/'
           target='_blank'
           rel='noopener noreferrer'
+          title='Rocco Rental Instagram'
         >
           <Icon
             icon='teenyicons:instagram-solid'

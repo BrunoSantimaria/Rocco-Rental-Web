@@ -31,7 +31,7 @@ export const AcordionBalancin = () => {
             expandIcon={<ExpandMore />}
           >
             <span className='font-bold'>
-              FICHA TÉCNICA
+              FICHA TÉCNICA / BALANCIN
             </span>
           </AccordionSummary>
           <AccordionDetails>
@@ -39,6 +39,7 @@ export const AcordionBalancin = () => {
               href='https://drive.google.com/file/d/1KEDG7itxXrevwjlHW4kLpr3FX9taQ_oa/view?usp=sharing'
               rel='noreferrer'
               target='_blank'
+              title='zlp 630 ficha tecnica rocco rental'
             >
               <div className='flex cursor-pointer'>
                 <Icon

@@ -22,7 +22,10 @@ export const Contacto = () => {
         comunicarte con nosotros via
         WhatsApp, o llamando al{" "}
         <strong>
-          <a href='tel:3417121040'>
+          <a
+            href='tel:3417121040'
+            title='Rocco Rental Telefono'
+          >
             {" "}
             (0341) - 7121040
           </a>
@@ -32,6 +35,7 @@ export const Contacto = () => {
         href='
 https://wa.link/bu3a1c'
         target='_blank'
+        title='Rocco Rental Whatsapp'
       >
         <div
           style={{

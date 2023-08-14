@@ -30,11 +30,11 @@ function App() {
 
         <meta
           name='description'
-          content='Alquiler y venta Andamios Rosario. Alquiler plataforma tijera Rosario. Venta Carretillas y hormigoneras Rosario'
+          content='Alquiler y venta Andamios. Alquiler plataforma tijera. Venta Carretillas y hormigoneras. Rosario, Santa Fe, Argentina'
         />
         <meta
           name='keywords'
-          content='alquiler,tijera,andamios,carretillas,alquiler andamios rosario, venta andamios rosario, alquiler andamios tubulares rosario, alquiler andamios tubulares, hormigoneras,plataformas,alquiler andamios, alquiler plataforma tijera, alquiler tijera, alquiler tijera rosario,hormigoneras,carretillas,palas,alquiler andamio colgante,alquiler andamio tubular, venta de carretillas, venta de hormigoneras, venta de palas, venta de andamios,alquiler elevacion rosario,alquiler elevacion roldan, alquiler andamios funes, alquiler andamios arroyo seco'
+          content='alquiler,tijera,andamios,balancin alquiler, balancin rosario, puntal telescopico, puntal telescopico rosario, alquiler andamios,carretillas,alquiler andamios rosario, venta andamios rosario, alquiler andamios tubulares rosario, alquiler andamios tubulares, hormigoneras,plataformas,alquiler andamios, alquiler plataforma tijera, alquiler tijera, alquiler tijera rosario,hormigoneras,carretillas,palas,alquiler andamio colgante,alquiler andamio tubular, venta de carretillas, venta de hormigoneras, venta de palas, venta de andamios,alquiler elevacion rosario,alquiler elevacion roldan, alquiler andamios funes, alquiler andamios arroyo seco'
         />
         <meta
           name='robots'

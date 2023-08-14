@@ -3,6 +3,8 @@ import {
   Nosotros2,
   Nosotros3,
 } from "../img/NosotrosImagenes";
+import { herramientasImg } from "../img/herramientas/HerramientasImg";
+import { Carousel } from "./Carousel";
 
 export const Nosotros = () => {
   return (
@@ -39,6 +41,7 @@ export const Nosotros = () => {
         <div className='mr-5 mt-5 w-full'>
           <img
             src={Nosotros1}
+            title='alquiler plataformas elevadoras rosario'
             alt='alquiler plataformas rosario'
             className='rounded-xl bg-no-repeat justify-center items-center place-items-center content-center object-cover h-[150px] w-[380px] backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50'
           ></img>
@@ -68,31 +71,32 @@ export const Nosotros = () => {
         <div className=' mt-5 h-[150px] w-full'>
           <img
             src={Nosotros2}
+            title='alquiler plataformas elevadoras rosario'
             alt='alquiler andamios rosario'
             className='rounded-xl bg-no-repeat object-cover h-[150px] w-full backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50'
           ></img>
         </div>
         <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-4 mb-4'>
           <span className='text-color2'>
-            NUESTRAS
+            VENTA
           </span>{" "}
-          {"\n"} HERRAMIENTAS
+          {"\n"} DE HERRAMIENTAS
         </h2>
         <h3 className=' font-josefin font-light text-lg  text-color3 tracking-wider w-[360px]'>
-          Contamos con{" "}
-          <strong>hormigoneras</strong>,{" "}
-          <strong>carretillas</strong> y{" "}
-          <strong>caballetes</strong> en
-          venta, de la mejor{" "}
-          <strong>calidad</strong> y al
-          mejor <strong>precio</strong>.
+          <strong>Hormigoneras</strong>,{" "}
+          <strong> carretillas</strong>,{" "}
+          <strong>caballetes</strong> y{" "}
+          <strong>andamios</strong>.
+          Directo de fabrica, la mejor{" "}
+          <strong>calidad</strong> y{" "}
+          <strong>precio</strong>.
+          Solicita más información sobre
+          nuestros productos.
         </h3>
-        <div className='flex  w-full  mt-5 mr-5'>
-          <img
-            src={Nosotros3}
-            alt='hormigoneras venta rosario'
-            className='rounded-xl bg-no-repeat object-cover h-[150px] w-full backdrop-opacity-50 mix-blend-lighten bg-cover saturate-50 '
-          ></img>
+        <div className='rounded-xl mt-5 bg-no-repeat object-cover h-[150px] w-full backdrop-opacity-50 mix-blend-lighten  '>
+          <Carousel
+            slides={herramientasImg}
+          />
         </div>
       </section>
     </div>

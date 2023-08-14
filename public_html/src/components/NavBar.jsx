@@ -25,6 +25,7 @@ const NavBar = () => {
             src={Logo}
             className='w-11 h-11 animate-fade-down animate-ease-in-out '
             alt='rocco rental logo'
+            title='Rocco Rental Logo'
           ></img>
         </Link>
       </div>
