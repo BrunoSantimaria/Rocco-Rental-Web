@@ -26,7 +26,7 @@ export default function Formulario() {
         onSubmit={handleSubmit(
           onSubmit
         )}
-        className=' mt-5 flex-col align-center justify-center mx-auto text-center'
+        className=' mt-5 flex-col align-center  justify-center mx-auto text-center'
       >
         <input
           type='text'
@@ -35,7 +35,7 @@ export default function Formulario() {
             required: true,
             maxLength: 15,
           })}
-          className='m-2 rounded-sm w-10/12  p-1 bg-color3 text-color1'
+          className='my-2 rounded-sm w-full lg:w-4/6  h-10 pl-4 p-1 bg-color3 text-color1'
         />
         <input
           type='email'
@@ -44,7 +44,7 @@ export default function Formulario() {
             required: true,
             maxLength: 30,
           })}
-          className='m-2  rounded-sm p-1 w-10/12 bg-color3 text-color1'
+          className='my-2 pl-4 rounded-sm lg:w-4/6 p-1 h-10 w-full bg-color3 text-color1'
         />
         <input
           type='text'
@@ -54,7 +54,7 @@ export default function Formulario() {
             minLength: 5,
             maxLength: 30,
           })}
-          className='m-2 w-10/12 rounded-sm p-1 bg-color3 text-color1'
+          className='my-2 w-full pl-4 lg:w-4/6 rounded-sm  h-10 p-1 bg-color3 text-color1'
         />
         <textarea
           placeholder='Consulta'
@@ -63,9 +63,9 @@ export default function Formulario() {
             minLength: 20,
             maxLength: 200,
           })}
-          className='m-2 rounded-sm w-10/12 p-1 bg-color3  text-color1'
+          className='my-2 rounded-sm w-full pl-4 p-1 lg:w-4/6 bg-color3  h-20 text-color1'
         />
-        <div className='border-color2 inline-flex border-[1px] border-opacity-100 rounded-lg w-3/6 h-10 justify-center items-center'>
+        <div className='border-color2 lg:w-4/6 inline-flex mt-5 border-[1px] border-opacity-100 rounded-lg w-full h-10 justify-center items-center'>
           <button
             type='submit'
             className='flex-col text-color3'

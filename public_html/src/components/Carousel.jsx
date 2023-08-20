@@ -37,8 +37,8 @@ export const Carousel = ({
       clearInterval(slideInterval);
   }, []);
   return (
-    <section className='inline-block '>
-      <div className='overflow-hidden relative h-[220px] rounded-lg'>
+    <section className=' '>
+      <div className='relative h-[220px] lg:h-[320px] lg:my-10 lg:w-3/6 lg:mx-auto  rounded-lg overflow-hidden'>
         <div
           className='flex transition-transform ease-out duration-500'
           style={{
@@ -56,20 +56,17 @@ export const Carousel = ({
                     index + slide.name
                   }
                   alt={slide.alt}
-                  title={slide.name}
-                  style={{
-                    backgroundSize:
-                      "cover",
-                    backgroundRepeat:
-                      "no-repeat",
-                  }}
-                  className='rounded-lg h-full w-screen'
+                  title={
+                    slide.name ||
+                    slide.title
+                  }
+                  className='w-fit h-fit'
                 ></img>
               );
             }
           )}
         </div>
-        <div className='absolute inset-0 flex items-center p-4 justify-between'>
+        <div className='absolute inset-0 flex items-center p-2 justify-between'>
           <button
             onClick={prev}
             className='rounded-full hover:bg-white shadow-lg bg-color1 p-1 text-gray-600'

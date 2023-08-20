@@ -6,9 +6,11 @@ import {
 } from "../img/NosotrosImagenes";
 import { Carousel } from "./Carousel";
 import { AcordionBalancin } from "./AcordionBalancin";
+import { BalancinImg } from "../img/BalancinImagenes/BalancinImagenes";
 import { Icon } from "@iconify/react";
 import Acordion from "./Acordion";
 import DarkAccordion from "./Acordion";
+import { herramientasImg } from "../img/herramientas/HerramientasImg";
 export const Productos = () => {
   const [
     currentIndex,
@@ -99,111 +101,75 @@ export const Productos = () => {
   return (
     <section className='mt-10'>
       <div className='flex'>
-        <h2 className='font-poppins h-fit py-6 text-color3  tracking-titles text-3xl mr-10'>
+        <h2 className='font-poppins lg:text-4xl h-fit py-6 text-color3  tracking-titles text-3xl mr-10'>
           Productos y servicios
         </h2>
         <div className='border-color2 border-xsm mt-16 w-4/6 mx-auto h-0'></div>
       </div>
       <div>
-        <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
+        <h2 className='text-[22px] lg:text-3xl text-color3 font-poppins tracking-wider mt-5 mb-4'>
           PLATAFORMAS TIJERA
         </h2>
-        <h3 className=' font-josefin font-light text-lg  text-color3 tracking-wider w-[360px]'>
+        <h3 className=' font-josefin font-light text-lg lg:w-5/6 lg:text-2xl  text-color3 tracking-wider w-[360px]'>
           <strong>Alquiler</strong> de
           equipos para trabajo en altura
           hasta 12 metros.
         </h3>
-        <div className='w-full h-[220px]  bg-black mt-5 rounded-xl inline-block'>
-          <Carousel
-            slides={
-              plataformaTijeraMock
-            }
-            autoSlide={false}
-          ></Carousel>
-        </div>
+
+        <Carousel
+          slides={plataformaTijeraMock}
+          autoSlide={true}
+        ></Carousel>
+
         <DarkAccordion />
-        <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
+        <h2 className='text-[22px] text-color3 lg:text-3xl font-poppins tracking-wider mt-5 mb-4'>
           PLATAFORMA COLGANTE
         </h2>
-        <h3 className=' font-josefin font-light text-lg  text-color3 tracking-wider w-[360px]'>
+        <h3 className=' font-josefin font-light text-lg lg:text-2xl lg:w-5/6  text-color3 tracking-wider w-[360px]'>
           <strong>Alquiler</strong> de
           andamio colgante eléctrico,
           para trabajos hasta 100
           metros.
         </h3>
-        <div className='w-full h-[213px]  bg-black mt-5 rounded-xl inline-block'>
-          <Carousel
-            slides={plataformaTijera}
-            autoSlide={false}
-          ></Carousel>
-        </div>
+
+        <Carousel
+          slides={BalancinImg}
+          autoSlide={true}
+        ></Carousel>
+
         <AcordionBalancin />
-        <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
+        <h2 className='text-[22px] text-color3 lg:text-3xl font-poppins tracking-wider mt-5 mb-4'>
           ANDAMIOS
         </h2>
-        <h3 className=' font-josefin font-light text-lg  text-color3 tracking-wider w-[360px]'>
+        <h3 className=' font-josefin font-light text-lg lg:text-2xl lg:w-5/6 text-color3 tracking-wider w-[360px]'>
           <strong>Alquiler</strong> y{" "}
           <strong>venta</strong> de
           andamios tubulares y
           accesorios. Disponibles en
           medidas estándar y de pasillo.
         </h3>
-        <div className='w-full h-[240px] bg-black mt-5 rounded-xl relative group'>
-          <div
-            style={{
-              backgroundImage: `url(${
-                andamios[
-                  currentIndex[0]
-                    .andamioIndex
-                ]
-              })`,
-              backgroundSize: "cover",
-              backgroundRepeat:
-                "no-repeat",
-              width: "100%",
-              height: "100%",
-            }}
-            className='rounded-xl'
-          ></div>
-          <div className='hidden group-hover:block absolute top-[50%] p-2 -translate-x-8 translate-y-[-50%] left-5 text-2xl cursor-pointer'>
-            <Icon
-              icon='ei:arrow-left'
-              className='text-color3 w-[40px] h-20'
-              onClick={() =>
-                prevSlide(
-                  0,
-                  andamios,
-                  "andamioIndex"
-                )
-              }
-            />
-          </div>
-          <div className='hidden group-hover:block absolute top-[50%] p-2 -translate-x-[-32px] translate-y-[-50%] right-5 text-2xl cursor-pointer'>
-            <Icon
-              icon='ei:arrow-right'
-              className='text-color3 w-[40px] h-20'
-              onClick={() =>
-                nextSlide(
-                  0,
-                  andamios,
-                  "andamioIndex"
-                )
-              }
-            />
-          </div>
-        </div>
-        <h2 className='text-[22px] text-color3 font-poppins tracking-wider mt-5 mb-4'>
+
+        <Carousel
+          slides={andamios}
+          autoSlide={true}
+        ></Carousel>
+
+        <div className='hidden group-hover:block absolute top-[50%] p-2 -translate-x-[-32px] translate-y-[-50%] right-5 text-2xl cursor-pointer'></div>
+
+        <h2 className='text-[22px] lg:text-4xl text-color3 font-poppins tracking-wider mt-5 mb-4'>
           HERRAMIENTAS
         </h2>
-        <h3 className=' font-josefin font-light text-lg  text-color3 tracking-wider w-[360px]'>
+        <h3 className=' font-josefin font-light text-lg lg:text-2xl lg:w-5/6 text-color3 tracking-wider w-[360px]'>
           <strong>Venta</strong>.
           Disponemos de carretillas,
           hormigoneras, caballetes,
           palas y más.
         </h3>
-        <div className='w-full h-[213px]  bg-black mt-5 rounded-xl'>
-          {" "}
-        </div>
+
+        <Carousel
+          slides={herramientasImg}
+          autoSlide={false}
+        ></Carousel>
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ export const Contacto = () => {
         className='flex  mt-12 '
         ref={contactoRef}
       >
-        <h2 className='font-poppins text-color3 tracking-titles  pb-6 text-3xl'>
+        <h2 className='font-poppins lg:text-4xl text-color3 tracking-titles lg:w-5/6 pb-6 text-3xl'>
           <span className='text-color2'>
             DUDAS
           </span>
@@ -17,7 +17,7 @@ export const Contacto = () => {
         </h2>
         <div className='border-color2 border-xsm place-self-center w-5/6 '></div>
       </div>
-      <p className='text-color3  font-josefin tracking-titles font-light mt-5'>
+      <p className='text-color3 lg:text-2xl font-josefin tracking-titles font-light mt-5'>
         <strong>Podés</strong>{" "}
         comunicarte con nosotros via
         WhatsApp, o llamando al{" "}
@@ -57,7 +57,7 @@ https://wa.link/bu3a1c'
           </div>
         </div>
       </a>
-      <p className='text-color3 ml-5 font-josefin tracking-titles font-light mt-5'>
+      <p className='text-color3 lg:text-2xl lg:ml-0 ml-5 font-josefin tracking-titles font-light mt-5'>
         <strong>O</strong> contactanos
         vía mail desde el siguiente
         formulario

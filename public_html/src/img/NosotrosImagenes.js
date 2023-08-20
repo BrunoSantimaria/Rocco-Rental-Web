@@ -12,9 +12,21 @@ import andamio2 from "../img/andamio2.jpg";
 import andamio3 from "../img/andamio3.jpg";
 
 let andamios = [
-  andamio2,
-  andamio3,
-  andamio5,
+  {
+    img: andamio2,
+    alt: "alquiler andamios rosario",
+    name: "alquiler andamios",
+  },
+  {
+    img: andamio3,
+    alt: "alquiler de andamios tubulares",
+    name: "alquiler andamios de pasillo",
+  },
+  {
+    img: andamio5,
+    alt: "alquiler andamios funes",
+    name: "alquiler andamios",
+  },
 ];
 let plataformaTijeraMock = [
   {

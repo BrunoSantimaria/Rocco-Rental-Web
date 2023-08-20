@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <div className='bg-color1 flex fixed justify-between h-20 w-full border-color2 border-b-xsm z-10'>
-      <div className='self-center ml-5'>
+      <div className='flex self-center ml-5'>
         <Link
           to='title'
           smooth={true}
@@ -23,11 +23,19 @@ const NavBar = () => {
         >
           <img
             src={Logo}
-            className='w-11 h-11 animate-fade-down animate-ease-in-out '
+            className='w-11 h-11 animate-fade-down animate-ease-in-out mt-2'
             alt='rocco rental logo'
             title='Rocco Rental Logo'
           ></img>
         </Link>
+        <section className='text-lg text-color3 font-poppins font-bold ml-4 sm:hidden md:hidden'>
+          <p className='font-extrabold text-2xl sm:hidden'>
+            Rocco Rental S.R.L.
+          </p>
+          <p>
+            Plataformas y herramientas
+          </p>
+        </section>
       </div>
       <div className='flex'>
         <div className='self-center mr-5 '>
@@ -45,8 +53,40 @@ const NavBar = () => {
             width='52'
             height='49'
             onClick={handleMenu}
-            className='cursor-pointer text-color2  '
+            className='cursor-pointer text-color2 lg:hidden'
           />
+          <div className='text-color3 text-2xl space-x-16 font-poppins md:hidden sm:hidden'>
+            <Link
+              to='nosotros'
+              smooth={true}
+              duration={700}
+              offset={-50}
+            >
+              <span className='cursor-pointer hover:text-color2'>
+                Nosotros
+              </span>
+            </Link>
+            <Link
+              to='productos'
+              smooth={true}
+              duration={700}
+              offset={80}
+            >
+              <span className='cursor-pointer hover:text-color2'>
+                Productos y Servicios
+              </span>
+            </Link>
+            <Link
+              to='contacto'
+              smooth={true}
+              duration={700}
+              offset={80}
+            >
+              <span className='cursor-pointer hover:text-color2'>
+                Contacto
+              </span>
+            </Link>
+          </div>
           {modal && (
             <div
               className='w-screen animate-fade-down animate-ease-in-out

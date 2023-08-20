@@ -53,30 +53,33 @@ function App() {
           content='Bruno Santimaria / www.linkedin.com/in/bruno-santimaria'
         />
       </Helmet>
-      <div className='bg-color1 bg-cover h-full w-full scroll-none'>
+      <div className='bg-gradient-to-b from-color1 via-gray-900 to-black bg-cover h-full w-full scroll-none'>
         <div className='pb-20'>
           <NavBar />
         </div>
-        <div id='title'>
-          <Title />
-        </div>
-        <div className='w-[375px] mx-auto mt-5 flex flex-col space-y-8 pb-10'>
+        <section className='lg:w-5/6 mx-auto'>
+          <div id='title'>
+            <Title />
+          </div>
+        </section>
+
+        <div className='w-[375px] lg:w-5/6 mx-auto mt-5 flex flex-col space-y-8 pb-10'>
           <div
             id='nosotros'
-            className='w-[375px] mx-auto mt-0 flex flex-col space-y-0 pb-10'
+            className=' mx-auto mt-0  lg:w-5/6 space-y-0 pb-10'
           >
             <Nosotros />
           </div>
           <div
             id='productos'
-            className='w-[375px] mx-auto mt-5 flex flex-col space-y-8 pb-10'
+            className='w-[375px] lg:pt-[150px] lg:w-5/6 mx-auto mt-5 flex flex-col space-y-8 pb-10'
           >
             <Productos />
           </div>
 
           <div
             id='contacto'
-            className='w-[375px] mx-auto mt-5 flex flex-col space-y-8 pb-10'
+            className='w-[375px] lg:w-5/6 mx-auto mt-5 flex flex-col space-y-8 pb-10'
           >
             <Contacto />
           </div>
