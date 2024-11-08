@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "https://roccorental.com.ar/:path*",
+      "source": "/:path*",
       "destination": "https://www.roccorental.com.ar/:path*",
       "permanent": true
     }
