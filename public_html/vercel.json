@@ -1,15 +1,3 @@
 {
-  "redirects": [
-    {
-      "source": "/:path*",
-      "destination": "https://www.roccorental.com.ar/:path*",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
