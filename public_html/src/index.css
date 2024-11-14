@@ -11,7 +11,10 @@
   font-family: "poppins";
   src: url("../src/fonts/Poppins.ttf");
 }
-
+@font-face {
+  font-family: "conthic";
+  src: url("../src/fonts/cookconthic.otf");
+}
 @keyframes fade {
   from {
     opacity: 0;
